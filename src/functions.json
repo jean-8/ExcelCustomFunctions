@@ -1,0 +1,36 @@
+{
+  "functions": [
+    {
+      "id": "isMerged",
+      "name": "ISMERGED",
+      "description": "Checks if a cell is part of a merged range.",
+      "parameters": [
+        {
+          "name": "Cell Address",
+          "type": "string",
+          "description": "The address of the cell (e.g., 'A1')."
+        }
+      ],
+      "result": {
+        "type": "boolean",
+        "description": "True if the cell is merged, otherwise False."
+      }
+    },
+    {
+      "id": "mergedValue",
+      "name": "MERGEDVALUE",
+      "description": "Gets the value of the top-left cell in the merged range.",
+      "parameters": [
+        {
+          "name": "Cell Address",
+          "type": "string",
+          "description": "The address of the cell (e.g., 'A1')."
+        }
+      ],
+      "result": {
+        "type": "string",
+        "description": "The value of the top-left cell in the merged range."
+      }
+    }
+  ]
+}
